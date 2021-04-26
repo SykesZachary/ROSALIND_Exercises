@@ -2,7 +2,6 @@
     ## http://rosalind.info/problems/cons/
 ### 23.04.2021
 
-
 import numpy as np
 import os
 
