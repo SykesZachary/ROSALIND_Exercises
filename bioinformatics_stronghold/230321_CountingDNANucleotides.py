@@ -18,7 +18,7 @@ def nucleotide_counter(path, file):
     with open(file, 'r') as f:
         for line in f:
             line = line.strip()
-            for word in re.findall('(A|G|C|T)', line):
+            for word in re.findall('([AGCT])', line):
                 if word not in nuc.keys():
                     nuc[word] = 0
                 if word in nuc.keys():
