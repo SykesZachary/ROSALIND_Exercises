@@ -21,7 +21,7 @@ def motif_identify(dna, substring):
 
 def file_extract(path, file):
     
-    os.chdir(datasets)
+    os.chdir(path)
 
     i = 2
     dna = ''
