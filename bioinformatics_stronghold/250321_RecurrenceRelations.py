@@ -34,8 +34,8 @@ def progeny_determination(path, file):
     i = 3
     while i < (n + 1):
 
-        fn1 = relation[(i - 1)]
-        fn2 = relation[(i - 2)]
+        fn1 = relation.get((i - 1))
+        fn2 = relation.get((i - 2))
 
         fn = fn1 + (k * fn2)
         relation[i] = fn
@@ -43,5 +43,6 @@ def progeny_determination(path, file):
         i += 1
 
     print(relation)
+
 
 progeny_determination(datasets, 'Dataset_4_RecurrenceRelations.txt')
