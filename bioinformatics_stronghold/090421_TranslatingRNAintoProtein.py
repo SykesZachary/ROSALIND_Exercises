@@ -2,7 +2,8 @@
     ## http://rosalind.info/problems/prot/
 ### 09.04.2021
 
-import os, shutil
+import os
+import shutil
 
 rosalind_sets = os.path.abspath(os.getcwd())
 datasets = os.path.join(rosalind_sets, 'Datasets/')
@@ -13,7 +14,7 @@ codon_table = {'F': ['UUU', 'UUC'],
                'S': ['UCU', 'UCC', 'UCA', 'UCG', 'AGU', 'AGC'],
                'Y': ['UAU', 'UAC'], 'Stop': ['UAA', 'UAG', 'UGA'],
                'C': ['UGU', 'UGC'], 'W': ['UGG'],
-               'P':['CCU', 'CCC', 'CCA', 'CCG'],
+               'P': ['CCU', 'CCC', 'CCA', 'CCG'],
                'H': ['CAU', 'CAC'], 'Q': ['CAA', 'CAG'],
                'R': ['CGU', 'CGC', 'CGA', 'CGG', 'AGA', 'AGG'],
                'I': ['AUU', 'AUC', 'AUA'], 'M': ['AUG'],
